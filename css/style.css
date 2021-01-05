@@ -1,0 +1,536 @@
+@font-face {
+    font-family: 'Digital Numbers Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Digital Numbers Regular'), url('../fonts/DigitalNumbers-Regular.woff') format('woff');
+}
+
+body {
+    background-color: #000;
+    font-family: 'Electrolize', sans-serif;
+    overflow-x: hidden;
+}
+
+.portfolio-header {
+    margin-top: 120px;
+    margin-bottom: 40px;
+    text-align: center;
+    position: relative;
+}
+
+.portfolio-header .favorite-number {
+    position: absolute;
+    right: 10%;
+    top: 15%;
+    font-size: 25px;
+}
+
+.portfolio-header .logo {
+    width: 260px;
+}
+
+.portfolio-header h1 {
+    color: #06ec90;
+    margin-top: 40px;
+    line-height: 45px;
+    font-size: 38px;
+    /* identical to box height */
+    letter-spacing: 0.13em;
+    text-shadow: 0px 0px 11px rgba(0, 255, 148, 0.55);
+}
+
+@-webkit-keyframes new_icon {
+    0% {
+        -webkit-transform: translate(0px, 5px);
+    }
+    100% {
+        -webkit-transform: translate(0px, -10px);
+    }
+}
+
+@-moz-keyframes new_icon {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 0 600%;
+    }
+}
+
+.arrow-animation {
+    animation: new_icon 1s linear 0s infinite alternate;
+    -webkit-animation: new_icon 2s linear 0s infinite alternate;
+}
+
+.portfolio-header p {
+    margin-top: 23px;
+    color: #E1E1E1;
+    font-size: 23px;
+    line-height: 27px;
+    text-align: center;
+    letter-spacing: 0.12em;
+    /*text-shadow: 0px 0px 11px rgba(0, 255, 148, 0.55);*/
+}
+
+.arrow {
+    margin-top: 94px;
+}
+
+.portfolio-about {
+    margin-top: 104px;
+}
+
+.portfolio-about-text {
+    position: relative;
+    padding: 20px 41px;
+}
+
+.portfolio-about-text h1 {
+    /*font-weight: 900;*/
+    font-size: 35px;
+    line-height: 41px;
+    /* identical to box height */
+    letter-spacing: 0.075em;
+    /* color: #454545;*/
+}
+
+.portfolio-about-text p {
+    margin-top: 25px;
+    font-size: 18px;
+    letter-spacing: 0.01em;
+    color: #E1E1E1;
+}
+
+.portfolio-about-text::before {
+    content: url("../img/border-top.svg");
+    height: 39px;
+    width: 39px;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.portfolio-about-text::after {
+    content: url("../img/border-bottom.svg");
+    height: 39px;
+    width: 39px;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+}
+
+.portfolio-about-img {
+    height: 320px;
+    text-align: center;
+    background-image: url('../img/lalal.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: 30px;
+}
+
+.portfolio-about-img img {
+    max-width: 100%;
+}
+
+.favorite-number {
+    font-family: 'Digital Numbers Regular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 91px;
+    /* identical to box height */
+    color: #06ec90;
+    text-align: center;
+    letter-spacing: -0.03em;
+    text-shadow: 0px 0px 11px rgba(0, 255, 148, 0.79);
+}
+
+.portfolio-about-img .favorite-number {
+    position: absolute;
+    bottom: -70px;
+    right: 5px;
+}
+
+.portfolio-skills-tools {
+    margin-top: 206px;
+    text-align: center;
+}
+
+.portfolio-tools h1 {
+    transform: translateX(-22%)
+}
+
+.portfolio-skills h1 {
+    font-size: 25px;
+    line-height: 30px;
+    /* identical to box height */
+    letter-spacing: 0.075em;
+    color: #363636;
+    transform: translateX(22%)
+}
+
+
+/*.portfolio-skills-tools h1 {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 21px;
+    letter-spacing: 0.075em;
+    color: #454545;
+} */
+
+.bg-success {
+    background-color: #06ec90!important;
+    background: linear-gradient(180deg, #00FF94 0%, #10D28C 100%);
+}
+
+.progress {
+    border-radius: .5rem;
+    height: 0.5rem;
+    margin-top: 7px;
+    position: relative;
+    background: #02301e;
+    position: relative;
+    box-shadow: 0px 0px 71px rgba(0, 255, 148, 0.55)
+}
+
+.portfolio-skill-title {
+    text-align: right;
+    font-size: 15px;
+    line-height: 21px;
+    /* identical to box height */
+    letter-spacing: 0.05em;
+    color: #E1E1E1;
+}
+
+.portfolio-tool-title {
+    text-align: left;
+    font-size: 15px;
+    line-height: 21px;
+    /* identical to box height */
+    letter-spacing: 0.05em;
+    color: #E1E1E1;
+}
+
+.portfolio-skill-item {
+    margin-top: 20px;
+}
+
+.portfolio-tool-item {
+    margin-top: 20px;
+}
+
+.portfolio-skills {
+    max-width: 500px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    position: relative;
+}
+
+
+}
+.portfolio-skills .title {
+    font-size: 25px;
+    line-height: 30px;
+    /* identical to box height */
+    
+    letter-spacing: 0.075em;
+    color: #363636;
+}
+.portfolio-tools {
+    margin-left: 40px;
+    max-width: 500px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    position: relative;
+}
+
+}
+.portfolio-tools .progress {
+    margin-left: 20px;
+}
+.portfolio-tools h1 {
+    font-size: 25px;
+    line-height: 30px;
+    /* identical to box height */
+    letter-spacing: 0.075em;
+    color: #363636;
+}
+.portfolio-site {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.portfolio-site h1 {
+    margin-bottom: 50px;
+}
+.portfolio-social {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.portfolio-social h1 {
+    margin-bottom: 50px;
+}
+.portfolio-email {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.portfolio-email-adress {
+    font-size: 15px;
+    line-height: 13px;
+    /* identical to box height */
+    letter-spacing: 0.1em;
+    /* color: #515151;*/
+}
+.skills-digital {
+    font-family: 'Digital Numbers Regular';
+    color: #10D28C;
+    font-size: 15px;
+    line-height: 23px;
+    text-align: center;
+    text-shadow: 0px 0px 11px rgba(0,
+    255,
+    148,
+    0.55);
+}
+.portfolio-skills-tools-content {
+    background-image: url('../img/bg-line.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.col-md-5 {
+    padding: 0;
+}
+.progress-bar {
+    border-radius: 50px;
+}
+.portfolio-site-wrap a img:first-child {
+    margin-right: -20px;
+}
+.portfolio-site-wrap a img:last-child {
+    margin-left: -20px;
+}
+.portfolio-site-wrap a img:hover {
+    width:120px;
+}
+.portfolio-site-wrap a img {
+    width:100px;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+.portfolio-email a img:hover {
+    width:120px;
+}
+.portfolio-email a img {
+    width:100px;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+#typed {
+    min-height: 149px;
+}
+@media (max-width: 767.98px) {
+    #typed {
+        min-height: 108px;
+    }
+    .portfolio-site-wrap a img:hover {
+        width: 80px;
+    }
+    .portfolio-email a img:hover {
+        width: 60px;
+    }
+    .portfolio-about-img {
+        width: 400px;
+        max-width: 100%;
+        margin: auto;
+    }
+    .portfolio-about-img img {
+        max-width: 100%;
+        width: 350px;
+    }
+    .portfolio-email img {
+        width: 60px !important;
+    }
+    .portfolio-site-wrap a img {
+        margin: 0;
+    }
+    .portfolio-social img {
+        margin: 0;
+    }
+    .portfolio-about-img {
+        margin-top: 0;
+    }
+    .portfolio-tool-title {
+        margin-left: 25px;
+    }
+    .justify-content-center {
+        padding-left: 40px;
+    }
+    .portfolio-tools h1 {
+        transform: translateX(-23%);
+        text-shadow: 0px 0px 11px rgba(0, 255, 148, 0.55);
+        position: relative;
+        color: #06ec90;
+    }
+    .portfolio-skills h1 {
+        transform: translateX(-25%)
+    }
+    .portfolio-skill-title {
+        text-align: left;
+        margin-left: 25px;
+    }
+    .portfolio-skills-tools {
+        margin-top: 100px;
+    }
+    .portfolio-header .logo {
+        width: 190px;
+    }
+    .d-flex {
+        flex-direction: column-reverse;
+    }
+    .portfolio-header h1 {
+        color: #06ec90;
+        margin-top: 47px;
+        font-size: 28px;
+        line-height: 25px;
+        font-weight: 300;
+        letter-spacing: 0.13em;
+        text-shadow: 0px 0px 11px rgba(0, 255, 148, 0.55);
+    }
+    .portfolio-about-text {
+        margin-top: 200px;
+        position: relative;
+    }
+    .portfolio-header p {
+        margin-top: 17px;
+        color: #06ec90;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.15em;
+        /* s */
+        
+        text-shadow: 0px 11px 33px rgba(0, 255, 148, 0.33);
+    }
+    .portfolio-skills-tools h1 {
+        font-size: 27px;
+        line-height: 18px;
+    }
+    .portfolio-about-text h1 {
+        text-align: center;
+        font-size: 27px;
+        line-height: 18px;
+        position: absolute;
+        top: -50px;
+        left: 50%;
+        transform: translateX(-50%)
+    }
+    .portfolio-about-text p {
+        font-family: 'Electrolize';
+        font-size: 15px;
+        line-height: 144.69%;
+    }
+    .portfolio-site {
+        padding-top: 70px;
+        padding-bottom: 37px;
+    }
+    .portfolio-site h1 {
+        margin: 35px 0;
+        font-size: 30px;
+    }
+    .portfolio-site img {
+        width: 80px !important;
+    }
+    .portfolio-site .behance {
+        width: 84px !important;
+    }
+    .portfolio-social {
+        padding-top: 37px;
+        padding-bottom: 94px;
+    }
+    .portfolio-social h1 {
+        margin: 35px 0;
+        font-size: 30px;
+    }
+    .portfolio-social a img {
+        width: 80px;
+    }
+    .portfolio-social-wrap a img:first-child {
+        margin-left: -20px;
+    }
+    .portfolio-social-wrap a img:last-child {
+        margin-right: -20px;
+    }
+    .portfolio-skills-tools-content {
+        background-image: none;
+    }
+    .portfolio-skills {
+        margin-left: 10px;
+        border-bottom: none;
+        margin: auto;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .portfolio-skills h1 {
+        text-shadow: 0px 0px 11px rgba(0, 255, 148, 0.55);
+        position: relative;
+        color: #06ec90;
+        z-index: 999;
+        font-size: 14px;
+        left: -20px;
+    }
+    .grid {
+        position: relative;
+    }
+    .grid-image {
+        position: absolute;
+        left: -60px;
+        top: 20px;
+        width: 70%;
+        height: 38%;
+        background-image: url('../img/ulalala.svg')
+    }
+    .portfolio-tools {
+        margin-left: 10px;
+        padding-top: 0;
+        margin: auto;
+        border-bottom: none;
+    }
+    .portfolio-tools h1 {
+        text-shadow: 0px 0px 11px rgba(0, 255, 148, 0.55);
+        position: relative;
+        color: #06ec90;
+        z-index: 999;
+        font-size: 14px;
+        left: -20px;
+    }
+    .portfolio-tools .progress {
+        margin-left: 0;
+    }
+    .portfolio-site-wrap a img:last-child {
+        margin-left: 0px;
+    }
+    .glitch-container {
+        width: 350px !important;
+    }
+}
+.glitch-container {
+    position: relative;
+    margin: 0 auto;
+    width: 380px;
+    /*calc(100% - 0px);*/
+    height: calc(100% - 0px);
+    overflow: hidden;
+}
+.glitch-img {
+    position:absolute;
+    width: 100%;
+    height: 130%;
+    top:0;
+    left: 0;
+    background-position: center;
+    background-size: cover;
+    opacity:1;
+}
